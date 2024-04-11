@@ -48,12 +48,12 @@ public class ReinaJugarPruebas
   }
   public static void main (String[] args)
   {
-    // testLeer();
-    // testLeerYMarcar();
-    // testPintar();
-    // testLeerYMarcarGrafico();
-    // testCuantasAmenazadas();
-    // testCalculo();
-    // testTabla();
+    testLeer();
+    testLeerYMarcar();
+    testPintar();
+    testLeerYMarcarGrafico();
+    testCuantasAmenazadas();
+    testCalculo();
+    testTabla();
   }
 }
