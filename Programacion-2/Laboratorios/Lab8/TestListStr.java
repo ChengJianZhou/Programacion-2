@@ -21,30 +21,24 @@ public class TestListStr {
     try {
       l.get(1);
       assert false : "Get con índice fuera de rango debería elevar una excepción";
-    }
-    catch (IndexOutOfBoundsException e) {
-    }
-    catch (Exception e) {
+    } catch (IndexOutOfBoundsException e) {
+    } catch (Exception e) {
       assert false : "Get con índice fuera de rango debería elevar una excepción";
     }
 
     try {
       l.set(1, "Hola");
       assert false : "Set con índice fuera de rango debería elevar una excepción";
-    }
-    catch (IndexOutOfBoundsException e) {
-    }
-    catch (Exception e) {
+    } catch (IndexOutOfBoundsException e) {
+    } catch (Exception e) {
       assert false : "Set con índice fuera de rango debería elevar una excepción";
     }
 
     try {
       l.remove(1);
       assert false : "Remove con índice fuera de rango debería elevar una excepción";
-    }
-    catch (IndexOutOfBoundsException e) {
-    }
-    catch (Exception e) {
+    } catch (IndexOutOfBoundsException e) {
+    } catch (Exception e) {
       assert false : "Remove con índice fuera de rango debería elevar una excepción";
     }
   }
@@ -63,7 +57,7 @@ public class TestListStr {
     System.err.println(l);
 
     assert "[D0, D1, D2, D3, D4]"
-      .equals(l.toString());
+        .equals(l.toString());
 
     assert "D3".equals(l.get(3));
 
@@ -98,7 +92,7 @@ public class TestListStr {
     assert l.size() == 0;
 
     for (int i = 0; i < N; i++) {
-      l.add(0, "X"+i);
+      l.add(0, "X" + i);
     }
 
     System.err.println(l);
@@ -113,7 +107,7 @@ public class TestListStr {
 
     for (int i = 0; i < N; i++) {
       if (i != 3)
-        assert l.get(i).equals("X"+(N-i-1));
+        assert l.get(i).equals("X" + (N - i - 1));
     }
 
     System.err.println(l);
@@ -151,25 +145,25 @@ public class TestListStr {
     assert l.size() == 0;
 
     for (int i = 0; i < N; i++) {
-      l.add("M"+i);
+      l.add("M" + i);
     }
 
     System.err.println(l);
 
-    l.add(N/2, "MEDIO");
+    l.add(N / 2, "MEDIO");
 
     System.err.println(l);
 
     assert l.size() == N + 1;
 
-    for (int i = 0; i < N/2; i++) {
-      assert l.get(i).equals("M"+i);
+    for (int i = 0; i < N / 2; i++) {
+      assert l.get(i).equals("M" + i);
     }
 
-    assert l.get(N/2).equals("MEDIO");
+    assert l.get(N / 2).equals("MEDIO");
 
-    for (int i = 1 + N/2 ; i < N + 1; i++) {
-      assert l.get(i).equals("M"+(i-1));
+    for (int i = 1 + N / 2; i < N + 1; i++) {
+      assert l.get(i).equals("M" + (i - 1));
     }
 
     System.err.println(l);

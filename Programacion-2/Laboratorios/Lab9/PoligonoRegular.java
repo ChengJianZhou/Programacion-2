@@ -1,7 +1,7 @@
-public class PoligonoRectangular extends Poligono{
+public class PoligonoRegular extends Poligono{
     private double longLado;
 
-    public PoligonoRectangular(Punto2D c, int n, double l){
+    public PoligonoRegular(Punto2D c, int n, double l){
         super(c, n);
         this.longLado = l;
     }

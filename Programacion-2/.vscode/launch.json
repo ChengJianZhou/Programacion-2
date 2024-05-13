@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestListStr",
+            "request": "launch",
+            "mainClass": "TestListStr",
+            "projectName": "Programacion-2_32967de8"
+        },
+        {
+            "type": "java",
+            "name": "DibujaCirculos",
+            "request": "launch",
+            "mainClass": "DibujaCirculos",
+            "projectName": "Programacion-2_32967de8"
+        },
+        {
+            "type": "java",
             "name": "TestListSim",
             "request": "launch",
             "mainClass": "TestListSim",
